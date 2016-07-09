@@ -1,0 +1,23 @@
+{
+  "name": "jumplink_steps",
+  "homepage": "https://github.com/daslicht/octobercms-bootstrap4",
+  "authors": [
+    "marc@jumplink.me (JumpLinkNetwork)"
+  ],
+  "description": "jQuery Steps Plugin for OctoberCMS",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery.steps": "jquery-steps#^1.1.0",
+    "bootstrap": "v4.0.0-alpha.2"
+  }
+}

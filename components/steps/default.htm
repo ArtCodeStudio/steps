@@ -1,0 +1,23 @@
+<h1>{{steps_name}}</h1>
+
+<div id="jumplink_steps_header">
+    {{ steps_header |raw }}
+<div>
+    
+<form id="jumplink_steps" action="#">
+    {% for step in steps_items %}
+        <h3>{{step.steps_step_title}}</h3>
+        <section>
+           {{step.steps_step_code | raw}}
+        </section>
+    {% endfor %}
+</form>
+
+<script>
+{#
+    steps_javascript (see fields.yaml ) 
+#}
+document.addEventListener("DOMContentLoaded", function(event) {
+    {{ steps_javascript | raw }}
+});
+</script>

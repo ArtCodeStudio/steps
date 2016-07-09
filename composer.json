@@ -1,0 +1,29 @@
+{
+    "name": "jumplink/steps",
+    "description": "jQuery Steps Plugin for OctoberCMS",
+    "require-dev": {
+        "ccampbell/chromephp": "^4.1",
+        "raulfraile/ladybug": "^1.0"
+    },
+    "authors": [
+        {
+            "name": "Marc Wensauer (JumpLinkNetwork)",
+            "email": "marc@jumplink.me"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "JumpLink\\Steps\\": ""
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "minimum-stability":"dev",
+    "require": {
+        "inwx/domrobot":"dev-master"
+    }
+    
+}

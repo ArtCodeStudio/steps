@@ -1,0 +1,41 @@
+# see: https://octobercms.com/docs/backend/forms#form-field-options
+
+fields:
+    steps_name:
+        label: Steps Name
+        placeholder: Name of the Steps
+
+tabs:
+    stretch: true
+    defaultTab: javascript
+    cssClass: jumplink_steps_css
+    fields: 
+
+            
+        steps_javascript:
+            tab: javascipt
+            label: Steps Javascript (called after dom is ready id="jumplink_steps")    
+            type: codeeditor
+            language: javascript
+            size: giant
+        
+        steps_header:
+            tab: html
+            label: Steps Header visible for all steps (html)
+            type: codeeditor
+            language: html              
+        
+        steps_items:
+            tab: html
+            label: Step Items
+            type: repeater
+            form:
+                fields:
+                    steps_step_title:
+                        label: Item Name
+                        placeholder: Item Name
+                    steps_step_code:
+                        label: Code (html)
+                        type: codeeditor
+                        language: html
+
